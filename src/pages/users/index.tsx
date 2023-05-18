@@ -3,11 +3,14 @@ import Link from "next/link";
 import Head from "next/head";
 import Heading from "@/components/Heading";
 
-import { userType } from "@/types/types";
+interface User {
+  id: number;
+  name: string;
+}
 
-type userProps = {
-  users: userType;
-};
+interface UsersProps {
+  users: User[];
+}
 
 export const getStaticProps = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -23,16 +26,16 @@ export const getStaticProps = async () => {
   };
 };
 
-export const Users: FC<userProps> = ({ users }) => {
+export const Users: FC<UsersProps> = ({ users }) => {
   return (
     <>
       <Head>
         <title>Users</title>
       </Head>
-      <Heading text="Users List:" />
+      <Heading tag="h1" text="Users List:" />
       <ul>
         {users &&
-          users.map(({ id, name }) => (
+          users.map(({ id, name }: User) => (
             <li key={id}>
               <Link href={`/users/${id}`}>{name}</Link>
             </li>
