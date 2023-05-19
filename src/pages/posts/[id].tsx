@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Head from "next/head";
-import PostInfo from "@/components/PostInfo";
+import PostInfo from "../../components/PostInfo";
 
 import { postType } from "@/types/types";
 

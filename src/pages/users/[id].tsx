@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { GetServerSideProps } from "next";
 import Head from "next/head";
-import UserInfo from "@/components/UserInfo";
-import { userType } from "@/types/types";
+import UserInfo from "../../components/UserInfo";
+import { userType } from "../../types/types";
 import { ParsedUrlQuery } from "querystring";
 
 type usersProps = {

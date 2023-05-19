@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import scss from "@/styles/Home.module.scss";
-import Heading from "@/components/Heading";
-import Socials from "@/components/Socials";
-import { socialsType } from "@/types/types";
+import scss from "../styles/Home.module.scss";
+import Heading from "../components/Heading";
+import Socials from "../components/Socials";
+import { socialsType } from "../types/types";
 
 type socialsProps = {
   socials: socialsType[];

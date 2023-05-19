@@ -2,7 +2,7 @@ import { FC } from "react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import Heading from "@/components/Heading";
+import Heading from "../../components/Heading";
 
 type PostsProps = {
   id: number;
