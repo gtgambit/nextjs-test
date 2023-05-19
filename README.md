@@ -1,2 +1,2 @@
-Test App of Next.js + typeScript and jsonplaholder api.
-Tested SSR, SSG, dynamic routes
+Test App with Next.js + typeScript and jsonplaceholder api.
+Tested SSR, SSG, dynamic routes. It was awesome.
